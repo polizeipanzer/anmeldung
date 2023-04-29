@@ -8,9 +8,9 @@
   <meta name="title" content="polizeipanzer.info">
   <meta name="description" content="Was ihr &uuml;ber die neuen Panzer der Polizei wissen m&uuml;sst.">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/custom.css">
 
-  <script src="/tailwindcss.js"></script>
   <style>
   .bg-fire {
     background-position: bottom left; background-repeat: no-repeat; background-image: url("/images/fire.webp");
@@ -64,13 +64,14 @@
             </div>
           </div>
         </div>
-        <div class="mt-8 flex justify-end mb-8">
-          <button type="submit" id="calltoaction" onclick="change_css();" class="rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">R&uuml;ckruf vereinbaren</button>
-        </div>
-        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" style="opacity:0" id="thanks" role="alert">
+        <div class="float-left mt-8 bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded relative text-xs" style="opacity:0" id="thanks" role="alert">
           <strong class="font-bold">Danke!</strong>
           <span class="block sm:inline">Wir melden uns.</span>
         </div>
+        <div class="mt-8 flex justify-end mb-8">
+          <button type="submit" id="calltoaction" onclick="change_css();" class="rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">R&uuml;ckruf vereinbaren</button>
+        </div>
+
       </div>
   </div>
   <img class="object-fill w-4/5 sm:w-2/5 object-center" id="panzerbild" src="images/survivor-r.webp" alt="Foto des gepanzerten Fahrzeuges „Survivor R“ der deutschen Polizei">
