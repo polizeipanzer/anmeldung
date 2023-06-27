@@ -131,10 +131,13 @@
     </div>
   </div>
   <script>
-    let emojis = document.getElementById("emojis");
+    let emojis = document.getElementById('emojis');
     for (var i = emojis.childElementCount; i >= 0; i--) {
       emojis.appendChild(emojis.children[Math.random() * i | 0]);
     }
+
+    var id = (Math.random() + 1).toString(36).substring(7);
+    window.location.replace('https://polizeipanzer.wtf/#' + id);
   </script>
 </body>
 </html>
